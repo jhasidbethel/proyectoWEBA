@@ -1,0 +1,10 @@
+public class Main  // jhasid bethel, isaac ortiz y javier rojas. webA punto 7//
+{
+    public static void main(String[] args) {
+    int arreglo [] = {1,3,4,2,7,0};
+    int resultado = arreglo[1] + arreglo[4];
+    System.out.println(resultado);
+    System.out.println(" el resultado es =" + " " + arreglo[1] + " " + arreglo[4]);
+    
+    }
+}
