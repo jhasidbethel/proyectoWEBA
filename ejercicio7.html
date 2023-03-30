@@ -1,0 +1,36 @@
+<!DOCTYPE html> <html> 
+<head>  
+    <title>ejercicio7</title>
+</head>
+<body>
+<h1>histograma</h1>
+
+<script>   
+    let numeros = prompt("Ingrese 5 números separados por un espacio");
+    
+    let myArray = numeros.split(" ").map(Number);
+    
+    let frecuencia = {};
+    
+    for (let i = 0; i < myArray.length; i++) {
+      let numero = myArray[i];
+      if (numero in frecuencia) {
+        frecuencia[numero]++;
+      } else {
+        frecuencia[numero] = 1;
+      }
+    }
+    
+    for (let i = 1; i <= 5; i++) {
+      let linea = i + ": ";
+      if (i in frecuencia) {
+        for (let j = 0; j < frecuencia[i]; j++) {
+          linea += "*";
+        }
+      }
+      document.write(linea);
+      console.log(linea);
+    }
+    </script>
+</body>
+</html>
